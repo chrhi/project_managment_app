@@ -26,6 +26,6 @@ export const styles = {
   };
 
  export  const inputs = {
-    input :" w-full border  px-3 py-1.5 text-base text-white bg-gray-800  bg-white bg-clip-padding font-normal rounded-lg shadow-sm  transition  ease-in-out focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500",
+    input :" px-4 py-2 text-white rounded-lg w-full  border-[2px] !border-gray-300  bg-primary transition  ease-in-out focus:outline-none  focus:border-orange-500 focus:ring-1 focus:ring-orange-500",
   }
   

@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#0D1117",
-        secondary: "#00f6ff",
+        secondary: "#23282e",
         
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },

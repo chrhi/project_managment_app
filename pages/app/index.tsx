@@ -14,7 +14,7 @@ function index() {
     </Head>
     <main>
     <Header />
-    <div>
+    <div className='w-full BodyHeight flex justify-center items-center'>
         <StateChain />
     </div>
     </main>

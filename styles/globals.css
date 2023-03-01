@@ -7,8 +7,15 @@
 
  }
 
+ .BodyHeight{
+   height: calc(100vh - 70px);
+ }
+
  body{
     background-color: #0D1117;
  
  }
 
+ .color{
+   background-color: #2e2f31;
+ }
