@@ -24,4 +24,8 @@ export const styles = {
   
     sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
   };
+
+ export  const inputs = {
+    input :" w-full border  px-3 py-1.5 text-base text-white bg-gray-800  bg-white bg-clip-padding font-normal rounded-lg shadow-sm  transition  ease-in-out focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500",
+  }
   
