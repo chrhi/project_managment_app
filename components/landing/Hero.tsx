@@ -9,7 +9,7 @@ export function Hero() {
        <div className="flex flex-row justify-between items-center w-full">
            <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
            sonatrach <br className="sm:block hidden" />{" "}
-             <span className="text-gradient"> project management </span>{" "}
+             <span className="text-gradient"> gestion de projet </span>{" "}
           </h1>
         </div>
 
@@ -17,9 +17,7 @@ export function Hero() {
          R&D
         </h1>
         <p className={`${styles.paragraph} text-gray-50 max-w-[470px] mt-5`}>
-          Our team of experts uses a methodology to identify the credit cards
-          most likely to fit your needs. We examine annual percentage rates,
-          annual fees.
+        Avec notre plateforme, vous pouvez planifier, organiser et exécuter vos projets facilement. Vous disposerez de tous les outils nécessaires pour gérer votre équipe, suivre les progrès et respecter les délais. Notre plateforme vous fournit également des données et des analyses en temps réel, vous permettant de prendre des décisions éclairées et d ajuster votre approche si nécessaire.
         </p>
     </div>
     

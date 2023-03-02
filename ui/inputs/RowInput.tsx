@@ -3,6 +3,7 @@ import { ChangeEvent, Dispatch, SetStateAction , useState } from "react"
 import { Button } from "../Button"
 import { Row } from "../Row"
 import { Col } from "../Col"
+import { inputs } from "../styles"
 
 type RowInputProps ={
   state:stakeHolderType[],
@@ -12,7 +13,7 @@ type RowInputProps ={
 
 export  const  RowInput = ({state , setState , index }:RowInputProps) => {
 
-
+  const [stakeHolder , setStateHolder] = useState<stakeHolderType>()
 
   const handleChange = (e:ChangeEvent<HTMLInputElement>) =>{
     //getting the data from the targeted input 
@@ -36,11 +37,28 @@ export  const  RowInput = ({state , setState , index }:RowInputProps) => {
   }
 
   return (
-    <Row className="w-full h-[300px] ">
-        <Col className="w-full">
-            
-        </Col>
-    </Row>
+    <Col className="w-full h-[300px] ">
+        <Row className="w-full gap-x-4 my-2">
+            <Col className='w-1/2 h-full '>
+                <label className='text-white text-xl m-1  '>name</label>
+                <input className={`${inputs.input} bg-black  `} type='text' />
+            </Col>
+            <Col className='w-1/2 h-full '>
+                <label className='text-white text-xl m-1  '>email</label>
+                <input className={`${inputs.input} bg-black  `} type='email' />
+            </Col>
+            <Col className='w-1/2 h-full '>
+                <label className='text-white text-xl m-1  '>phone</label>
+                <input className={`${inputs.input} bg-black  `} type='email' />
+            </Col>
+        </Row>
+        <Row className="w-full my-2">
+            <Col className='w-full h-full  '>
+               <label className='text-white text-2xl m-1  '>description </label>
+               <textarea className={`${inputs.input} bg-black h-[130px] font-semibold `} ></textarea>
+            </Col>
+        </Row>
+    </Col>
   )
 }
 

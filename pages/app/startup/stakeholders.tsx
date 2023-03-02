@@ -3,7 +3,7 @@ import { SideBarStartUp } from '@/components/startup/SideBarStartUp'
 import { FormLayout } from '@/ui/FormLayout'
 import Head from 'next/head'
 import React from 'react'
-
+import { layout } from '@/ui/styles'
 
 
 
@@ -19,7 +19,7 @@ export default function stakeholders() {
   <main className='w-full h-screen flex ' >
   <SideBarStartUp />
  
-  <FormLayout className='p-4'>
+  <FormLayout className={`${layout.formInputSection} p-4`}>
   <h2 className='text-white font-bold text-4xl m-4 '>stake Holders </h2>
       <StakeholdersForm />
   </FormLayout>

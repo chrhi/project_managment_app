@@ -23,6 +23,7 @@ export const styles = {
     sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
   
     sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
+    formInputSection : ` w-[80%] ml-[20%] min-h-screen h-fit  `
   };
 
  export  const inputs = {

@@ -1,22 +1,33 @@
 import { Row } from '@/ui/Row'
-import React from 'react'
 import { inputs } from '@/ui/styles'
 import { Col } from '@/ui/Col'
+import { layout } from '@/ui/styles'
+import {useState} from 'react'
+import { stakeHolderType } from '@/util/types'
+import {IMPACT} from '@/util/types'
+import { RowInput } from '@/ui/inputs/RowInput'
 
 
 export  function StakeholdersForm() {
+
+  const initialState : stakeHolderType = {
+    name:"",
+    description:"",
+    email:"",
+    impact:IMPACT.LOW,
+    phone:123
+
+  }
+  const [stakeHolders , setStakeHolders] = useState<stakeHolderType[]>([initialState])
+
+
+
+
   return (
-    <Col className='w-full h-full gap-y-4 p-4'>
-    <Row className='w-full h-[50px] items-center px-2 gap-x-4 my-4 '>
-       <Col className='w-1/2 h-full '>
-       <label className='text-white text-xl m-1  '>title</label>
-       <input className={`${inputs.input} bg-black  `} />
-       </Col>
-       <Col className='w-1/2 h-full '>
-       <label className='text-white text-xl m-1  '>title</label>
-       <input className={`${inputs.input} bg-black  `} />
-       </Col>
-    </Row>
+    <Col className={` w-full mx-auto xl:w-[1270px] gap-y-4 p-4`}>
+      {
+        stakeHolders.map((item , index) =>  <RowInput key={item.description + item.phone} state={stakeHolders}  setState={setStakeHolders} index={index} />)
+      }
 
    
    

@@ -4,7 +4,7 @@ export type itemSideBar = {
     path:string
 }
 
-enum IMPACT {
+export enum IMPACT {
     HEIGHT,
     MID ,
     LOW

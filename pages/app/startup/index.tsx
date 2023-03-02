@@ -13,10 +13,10 @@ function index() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main className='w-full h-screen flex ' >
+    <main className='w-full h-screen flex  ' >
     <SideBarStartUp />
    
-    <FormLayout className='p-4'>
+    <FormLayout className='p-4 w-[80%] ml-[20%]   '>
     <h2 className='text-white font-bold text-4xl m-4 '>integration </h2>
         <IntegrationForm />
     </FormLayout>
